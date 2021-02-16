@@ -1,0 +1,13 @@
+---
+layout: base
+---
+<article class="wrapper container">
+	{{ content }}
+</article>
+<footer class="container">
+	<ul class="list-inline">
+		<li class="list-inline-item no-print">Copyright &copy {{ site.time | date: '%Y' }} {{ site.author }}</li>
+		<li class="list-inline-item"><a href="{{ site.url }}"><i class="fas fa-globe fa-fw"></i></a><span class="print">{{ site.url }}</span></li>
+		<li class="list-inline-item"><a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a><span class="print">{{ site.linkedin }}</span></li>
+	</ul>
+</footer>

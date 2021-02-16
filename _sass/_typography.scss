@@ -1,0 +1,63 @@
+// _typography.scss
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* { 
+	font-family:'Quicksand',sans-serif;
+}
+
+h1 {
+	font-size:4em;
+}
+.header {
+	font-weight:bold;
+}
+
+/* 
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Antic|Antic+Slab|Arsenal|Barlow+Semi+Condensed|Cambay|Catamaran|Comfortaa|Delius|Didact+Gothic|El+Messiri|Encode+Sans+Condensed|Gilda+Display|Gruppo|Gudea|Hind|Hind+Guntur|Hind+Siliguri|Jaldi|Jura|Karla|Khula|Mako|Martel+Sans|Marvel|Maven+Pro|Molengo|Mukta+Vaani|Nanum+Gothic|Neucha|News+Cycle|Nobile|Nunito+Sans|Overlock|Ovo|Palanquin|Pompiere|Pontano+Sans|Questrial');
+@import url('https://fonts.googleapis.com/css?family=Muli|PT+Sans+Narrow|Titillium+Web');
+Ovo
+Palanquin
+Muli 
+Nunito PT Sans Narrow
+Nunito Sans
+Titillium Web
+Overlock
+Cantarell
+Quicksand
+Marvel
+Work Sans
+Scada
+Sarala
+Rubik
+Antic
+Antic Slab
+Arsenal
+Barlow Semi Condensed
+Cambay
+Catamaran
+Comfortaa
+Delius
+Didact+Gothic
+El Messiri
+Encode+Sans+Condensed
+Gilda Display
+Gruppo
+Gudea
+Hind
+Hind Guntur
+Hind Siliguri
+Jaldi
+Jura
+Karla
+Khula
+Mako
+Martel Sans
+Marvel
+Maven Pro
+Molengo
+Mukta Vaani
+Nanum Gothic
+Neucha
+News Cycle
+*/

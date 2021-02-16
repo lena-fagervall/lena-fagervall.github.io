@@ -1,0 +1,9 @@
+/* TEAM */
+Developer: Henrik Becker
+Site: http://www.henrikbecker.net
+Location: Stockholm, Sweden
+                      
+/* SITE */   
+Standards: HTML5, CSS3
+Components: Bootstrap,jQuery
+Software: Jekyll
