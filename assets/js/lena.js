@@ -1,6 +1,6 @@
 (function($) {
   var local = '127.0.0.1' === document.location.hostname;
-  var apiRoot = local ? 'https://localhost:5001/api/v1' : 'https://henrikbecker.azurewebsites.net/api/v1';
+  var apiRoot = local ? 'http://localhost:7071/api' : 'https://henrikbeckerapi.azurewebsites.net/api';
 	$.get(apiRoot + '/ip')
 	  .done(function (ip) {
 	  	$(".contact-form").each(function(){
@@ -8,7 +8,7 @@
 			that.submit(function (e) {
 				e.preventDefault();
 				$(".status", that).html("");
-				$.post(apiRoot + '/contact-form', {
+				$.post(apiRoot + '/contact', {
 					"subject": "Contact Form",
 					"from": $("#from", that).val(),
 					"address": ip,
