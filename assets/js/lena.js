@@ -36,7 +36,7 @@
         .then(function (response) { console.log(response); });
     };
     ping();
-    var handle = window.setInterval(ping, local ? 600000 : 60000);
+    var handle = window.setInterval(ping, 600000);
     window.addEventListener('unload', function () { window.clearInterval(handle); });
   }
   keepApiAlive();
