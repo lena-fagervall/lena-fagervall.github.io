@@ -16,18 +16,21 @@
 					data: JSON.stringify({
             subject: 'Contact Form',
             from: $("#from", that).val(),
+            name: $("#from", that).val(),
 					  address: ip,
 					  message: $("#message", that).val()
-          })
-				}).fail(function (a, b, c) {
-					$(".status", that).html(c).show();
-				}).done(function() {
-					$("#from, #message", that).val("");
-					$(".btn", that).html("Skickat!").show();
-					$(".status", that).html("");
-					window.setTimeout(function () { 
-						$(".btn", that).html("Kontakta mig!");
-					}, 10000);
+          }),
+          success: function() {
+            $("#from, #message", that).val("");
+            $(".btn", that).html("Skickat!").show();
+            $(".status", that).html("");
+            window.setTimeout(function () { 
+              $(".btn", that).html("Kontakta mig!");
+            }, 10000);
+          },
+          error: function (a, b, c) {
+            $(".status", that).html(c).show();
+          }
 				});
 				return false;
 			});		
