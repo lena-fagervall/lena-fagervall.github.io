@@ -1,6 +1,6 @@
 (function($) {
   var local = '127.0.0.1' === document.location.hostname;
-  var apiRoot = local ? 'http://localhost:7071/api' : 'https://henrikbeckerapi.azurewebsites.net/api';
+  var apiRoot = local ? 'http://localhost:7071/api' : 'https://henrikbecker.azure-api.net';
 	$.get(apiRoot + '/ip')
 	  .done(function (ip) {
 	  	$(".contact-form").each(function(){
