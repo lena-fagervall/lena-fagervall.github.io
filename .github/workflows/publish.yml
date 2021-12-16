@@ -1,0 +1,24 @@
+name: Build and Publish
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      - uses: actions/checkout@v2
+      - run: gem install bundler
+      - run: bundler install
+      - run: bundle exec jekyll build
+      
+      - name: Publish gh-pages
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: _site
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
