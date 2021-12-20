@@ -16,7 +16,6 @@
 title: Lena Fagervall
 author: Lena Fagervall
 linkedin: https://www.linkedin.com/in/lena-fagervall-a121477/
-#email: your-email@example.com
 #description: >- # this means to ignore newlines until "baseurl:"
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
@@ -24,16 +23,12 @@ linkedin: https://www.linkedin.com/in/lena-fagervall-a121477/
 baseurl: "" # the subpath of your site, e.g. /blog
 # the base hostname & protocol for your site, e.g. http://example.com
 url: "http://lena.fagervall.se" 
-#twitter_username: jekyllrb
 github_username: lena-fagervall
 repository: lena-fagervall/lena-fagervall.github.io
 
 # Build settings
 markdown: kramdown
-#theme: minima
-plugins:
-#  - jekyll-feed
-  
+permalink: pretty
 sass:
   style: compressed 
 
