@@ -58,3 +58,9 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - img/readme
+
+defaults:
+  - scope: 
+      path: "*"
+    values:
+      lang: sv
